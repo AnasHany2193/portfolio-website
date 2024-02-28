@@ -1,0 +1,109 @@
+/* Tables and smaller */
+@media (max-width: 1200px) {
+
+    /* Sections: Home-a */
+    #home-a .container .specials {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #home-b .stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #home-b .stats div:first-child {
+        order: 1;
+    }
+
+
+    #home-b .stats div:last-child {
+        order: 1;
+    }
+
+    #home-c .container .process {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #about-d .container .testimonials {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 700px) {
+    .container .main-nav {
+        flex-direction: column;
+    }
+
+    /* Sections: Home-a */
+    #home-a .container .specials {
+        grid-template-columns: 1fr;
+    }
+
+    #home-b .stats {
+        grid-template-columns: 1fr;
+    }
+
+    #home-b .stats div:first-child {
+        order: 0;
+    }
+
+    #home-c .container .process {
+        grid-template-columns: 1fr;
+    }
+
+    #header-inner {
+        height: 9rem;
+    }
+
+    #header-inner .container {
+        height: 9rem;
+    }
+
+    #about-a .container .about-info {
+        grid-template-columns: 1fr;
+    }
+
+    #about-a .container .about-info .bio {
+        grid-column: span 1;
+    }
+
+    #about-d .container .testimonials {
+        grid-template-columns: 1fr;
+    }
+
+    #work-a .container .items {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #contact-b .contact-info {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+
+@media (max-width: 525px) {
+
+    #about-c .container .about-logos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #contact-a .container .text-fields {
+        grid-template-columns: 1fr;
+    }
+
+    #contact-a .container .text-fields .message-input {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    #main-footer {
+        height: 9rem;
+    }
+
+    #main-footer .footer-content {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 9rem;
+    }
+}
